@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tic-tac-toe</title>
+		<script src="./js/main.js" defer></script>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+			<div id="new-game">
+				<div class="logo"><img src="./assets/logo.svg" alt="">
+				</div>
+				<div id="select-mark">
+					<span>Pick your mark</span>
+					<div>
+						<div >
+							<img class="pick-mark" data-mark="O" src="./assets/icon-o-default.svg" alt="" >
+						</div>
+						<div >
+							<img class="pick-mark" data-mark="X" src="./assets/icon-x-default.svg" alt="">
+						</div>
+					</div>
+					<span>REMEMBER, X GOES FIRST</span>
+				</div>
+				<div>	
+					<button id="start-game">START GAME</button>
+				</div>
+			</div>
+
+
+			<div id="container">
+				<div id="top-row">
+					<div class="logo"><img src="./assets/logo.svg" alt=""></div>
+					<div id="next-turn"><span>X</span>'s TURN </div>
+					<div id="reset"><img src="./assets/icon-restart.svg" alt="" srcset="" width="20px" height="20px"></div>
+				</div>
+				<div id="game-board">
+					<div class="grid-cell" data-position="00"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="01"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="02"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="10"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="11"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="12"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="20"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="21"><img src="" alt="" class="mark"></div>
+					<div class="grid-cell" data-position="22"><img src="" alt="" class="mark"></div>
+				</div>
+				<div id="score">
+					<div id="score-you">
+						<span>YOU</span>
+						<span>00</span>
+					</div>
+					<div id="ties">
+						<span>TIES</span>
+						<span>00</span>
+					</div>
+					<div id="score-cpu">
+						<span>CPU</span>
+						<span>00</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="round-result">
+				<span id="result">YOU WON!</span>
+				<div class="mark-result X" >
+					<span>X</span>
+					<span>TAKES THE ROUND</span>
+				</div>
+				<div id="choice-next">
+					<button id="quit">QUIT</button>
+					<button id="next-round">NEXT ROUND</button>
+
+				</div>
+			</div>
+			
+			<div id="restart">
+				<span>RESTART GAME?</span>
+				<div>
+					<button>NO, CANCEL</button>
+					<button>YES, RESTART</button>
+				</div>	
+			</div>
+	</body>
+</html>
