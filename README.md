@@ -4,7 +4,7 @@ This is a simple Tic-Tac-Toe game made in vanilla Javascript.
 
 ### Links
 
-- Live Site URL: [Live Preview]()
+- Live Site URL: [Live Preview](https://chic-bunny-491a7c.netlify.app/)
 
 
 ### why did i make this? Nobody cares about a tic-tac-toe game
@@ -13,7 +13,7 @@ This is a simple Tic-Tac-Toe game made in vanilla Javascript.
 
 ### Screenshots
 
-![](./desktop_startScreen.png) ![](./destop_gameBoard.png)
+![](./desktop_startScreen.png) ![](./destop_gameBoard.png) ![](./Screenshot from 2022-09-10 14-10-27.png) 
 
 ### Built with
 
