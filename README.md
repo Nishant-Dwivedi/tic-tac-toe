@@ -13,7 +13,7 @@ This is a simple Tic-Tac-Toe game made in vanilla Javascript.
 
 ### Screenshots
 
-![](./desktop_startScreen.png) ![](./destop_gameBoard.png) ![](./Screenshot from 2022-09-10 14-10-27.png) 
+![](./desktop_startScreen.png) ![](./destop_gameBoard.png) ![](./result.png) 
 
 ### Built with
 
