@@ -23,7 +23,7 @@ This is a simple Tic-Tac-Toe game made in vanilla Javascript.
 
 ### My thoughts about the project and what I learned from it
 
-- i had some trouble seeing the addvantages of using these design patterns over OOP paradigm. Implementing inheritance in objects created using factory functions (I initially used factory function for intantiating player1 and computerAI objects) was especially messy. i either had to use a separate "protoype object" for delegation of common methods, and that diluted the global scope anyway. I did resort to using two separate instances using IIFEs instead of factory functions. 
+- i had some trouble seeing the addvantages of using these design patterns over OOP paradigm. Implementing inheritance in objects created using factory functions (I initially used factory function for instantiating player1 and computerAI objects) was especially messy. i either had to use a separate "protoype object" for delegation of common methods, and that diluted the global scope anyway. I did resort to using two separate instances using IIFEs instead of factory functions. 
 
  
 
