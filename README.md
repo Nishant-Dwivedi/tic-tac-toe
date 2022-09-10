@@ -1,2 +1,30 @@
 # tic-tac-toe
-Tic-tac-toe game made in javascript.
+This is a simple Tic-Tac-Toe game made in vanilla Javascript.
+
+
+### Links
+
+- Live Site URL: [Live Preview]()
+
+
+### why did i make this? Nobody cares about a tic-tac-toe game
+
+- I had just recently learned about ES Modules and how prevalent its usage was. But since it was very recent, not every codebase had adopted it whic is why i also wanted get familiar with other widely used design patterns, namely - *factory function pattern* and the *classical module pattern*. Tic-tac-toe seemed like a great pet project to start with.
+
+### Screenshots
+
+![](./desktop_startScreen.png) ![](./destop_gameBoard.png)
+
+### Built with
+
+- CSS Grid
+- Javascript
+
+
+### My thoughts about the project and what I learned from it
+
+- i had some trouble seeing the addvantages of using these design patterns over OOP paradigm. Implementing inheritance in objects created using factory functions (I initially used factory function for intantiating player1 and computerAI objects) was especially messy. i either had to use a separate "protoype object" for delegation of common methods, and that diluted the global scope anyway. I did resort to using two separate instances using IIFEs instead of factory functions. 
+
+ 
+
+
