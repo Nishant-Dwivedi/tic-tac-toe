@@ -12,7 +12,7 @@ This is a simple Tic-Tac-Toe game made in vanilla Javascript.
 - I had just recently learned about ES Modules and how prevalent its usage was. But since it was very recent, not every codebase had adopted it whic is why i also wanted get familiar with other widely used design patterns, namely - *factory function pattern* and the *classical module pattern*. Tic-tac-toe seemed like a great pet project to start with.
 
 ### Screenshots and videos
-
+[tictactoe.webm](https://user-images.githubusercontent.com/70796112/189516159-53ec790e-784c-4672-8fd0-3a2fd6d271f6.webm)
 
 ### Built with
 
