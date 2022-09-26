@@ -1,4 +1,4 @@
-// --------------------------------Gameboard module----------------
+// --------------------------------Gameboard OBJECT (SINGLETON/IIFE)----------------
 let gameboard = function(){
     let state = [["", "", ""], ["", "", ""], ["", "", ""]];
     let winner;
@@ -146,7 +146,7 @@ let gameboard = function(){
     }
 }();
 
-// --------------------------------PLAYER module ------------------
+// --------------------------------PLAYER OBJECT (SINGLETON/IIFE) ----------------------------------------------------
 
 let player = function () {
     let selection;
@@ -179,8 +179,7 @@ let player = function () {
             setTimeout(displayController.resetGUI, 1000)
             // gui.showWinner()
             displayController.displayWinner(selection);
-            displayController.incrementCounter(selection);
-            
+            displayController.incrementCounter(selection);       
         }
         else if (gameboard.gameTied() == true) {
             displayController.incrementCounter();
@@ -191,7 +190,6 @@ let player = function () {
         else {
             setTimeout(computerAI.makeMove, 1000);
         }
-
     }
 
     return {
@@ -209,7 +207,6 @@ let computerAI = function () {
     let selection;
     function setSelection(a) {
         selection = a;
-        // console.log(`computer selection is ${selection}`);
     }
 
     function getSelection () {
@@ -230,14 +227,11 @@ let computerAI = function () {
             setTimeout(displayController.resetGUI, 1000)
             // show winner
             displayController.displayWinner(selection);
-
             displayController.incrementCounter(selection)
         }
 
        else if (gameboard.gameTied() == true) {
             displayController.incrementCounter();
-            // display tied dialogue TODO
-
             displayController.displayWinner()
         }
     }
@@ -249,10 +243,9 @@ let computerAI = function () {
     }
 }();
 
-// -------------------------GUI module-----------------------------------
+// -------------------------------------------------------------------------GUI OBJECT----------------------------------------------------------------------------
 
 let displayController = function (){
-   
     let startGame = document.getElementById('start-game')
     let roundResult = document.getElementById('round-result');
     let restart = document.getElementById('restart');
@@ -336,7 +329,6 @@ let displayController = function (){
         }
     }
 
-
     function displayWinner(selection) {
 
         if (selection == undefined) {
@@ -345,13 +337,11 @@ let displayController = function (){
             resultMark[0].children[1].innerText = "NO WINNER THIS ROUND!";
         }
         else {
-        
         result.innerText = player.getSelection() == selection ? "YOU WON!" : "YOU LOST!";
         resultMark[0].children[0].innerText = selection;
         resultMark[0].children[1].innerText = "TAKES THE ROUND!";
 
     }
-    
         roundResult.style.visibility = "visible";
         quit.addEventListener("click", () =>{
             location.reload();
@@ -371,9 +361,6 @@ let displayController = function (){
         }, {once:true})
       }
 
-        
-    
-
     function quitRound () {
         restart.style.visibility = "visible";
         quitNO.addEventListener('click',() =>{
@@ -382,9 +369,7 @@ let displayController = function (){
         quitYES.addEventListener('click', () => {
             location.reload()
         })
-
     }
-    
 
     return {
         reset,
@@ -399,10 +384,9 @@ let displayController = function (){
         quitRound,
         incrementCounter
     }
-
 }();
 
-// -------------------------------main application logic----------------------
+// -------------------------------------------------------MAIN------------------------------------------------------------------
 
 // adds eventList on start screen choices
 for (let i = 0; i < displayController.mark.length; i++){
