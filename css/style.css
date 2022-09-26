@@ -138,7 +138,6 @@
     color: white;
     font-weight: 600;
     visibility: hidden;
-    gap: .55rem;
     position: absolute;
 }
 
@@ -333,6 +332,8 @@ small > a {
 
     #container {
         transform: scale(.9);
+         gap: .55rem;
+
     }
 
     #top-row, #game-board, #score {
